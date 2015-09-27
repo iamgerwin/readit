@@ -11,3 +11,19 @@ p
   | Hey, #{@mmm}
   br
   =link_to "To Google" ,"http://google.com"
+  | ID:
+  =params[:id]
+  br
+  =session[:name]
+  br
+  =cookies[:name]
+  br
+  =flash[:name]
+i
+  =current_page?(controller: 'welcome', action: 'index', order: 'desc')
+
+br
+br
+  a>> href='url1' Link1
+  a<< href='url2' Link2
+  a<> href='url3' Link3
